@@ -9,17 +9,16 @@ A very simple calculator app built with Flutter that supports basic arithmetic o
 Here are some screenshots of the app in action :
 
 Main screen
-![Main screen](https://drive.google.com/uc?export=view&id=169twJElbgIK5FQFNVUCtxcYmmRNVE0AC)
-<img src="https://drive.google.com/uc?export=view&id=169twJElbgIK5FQFNVUCtxcYmmRNVE0AC" alt="Main screen" width="160">
+<img src="https://drive.google.com/uc?export=view&id=169twJElbgIK5FQFNVUCtxcYmmRNVE0AC" alt="Main screen" width="320">
 
 Addition
-![Addition](https://drive.google.com/uc?export=view&id=1HQy2_YgymHde_b2FOb_SILuHvAPvx0mm)
+<img src="https://drive.google.com/uc?export=view&id=1HQy2_YgymHde_b2FOb_SILuHvAPvx0mm" alt="Main screen" width="320">
 
 Substraction
-![Substraction](https://drive.google.com/uc?export=view&id=1zcyzGd7Kk4H0bMFVfnD5xl3RYUr_2jjh)
+<img src="https://drive.google.com/uc?export=view&id=1zcyzGd7Kk4H0bMFVfnD5xl3RYUr_2jjh" alt="Main screen" width="320">
 
 Multipication
-![Multipication](https://drive.google.com/uc?export=view&id=1WjmcAvLl7V_VQ2oC3N8yw798V_FlXeGX)
+<img src="https://drive.google.com/uc?export=view&id=1WjmcAvLl7V_VQ2oC3N8yw798V_FlXeGX" alt="Main screen" width="320">
 
 Division
-![Division](https://drive.google.com/uc?export=view&id=1kUXnRoO6RClQGJDoKb-TbO5COhwF3Tn2)
+<img src="https://drive.google.com/uc?export=view&id=1kUXnRoO6RClQGJDoKb-TbO5COhwF3Tn2" alt="Main screen" width="320">
