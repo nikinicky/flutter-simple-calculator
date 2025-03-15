@@ -10,6 +10,7 @@ Here are some screenshots of the app in action :
 
 Main screen
 ![Main screen](https://drive.google.com/uc?export=view&id=169twJElbgIK5FQFNVUCtxcYmmRNVE0AC)
+<img src="https://drive.google.com/uc?export=view&id=169twJElbgIK5FQFNVUCtxcYmmRNVE0AC" alt="Main screen" width="160">
 
 Addition
 ![Addition](https://drive.google.com/uc?export=view&id=1HQy2_YgymHde_b2FOb_SILuHvAPvx0mm)
