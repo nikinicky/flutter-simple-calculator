@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../services/basic_arithmetic.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -14,13 +15,13 @@ class _MainScreenState extends State<MainScreen> {
   final TextEditingController secondNumberController = TextEditingController();
   double result = 0.0;
 
-  String _selectedOperator = "";
+  String selectedOperator = "";
   String _displayText = "";
-  String _displayResult = "465545647647645645";
+  String _displayResult = "";
 
   void _setOperator(String operator) {
     setState(() {
-      _selectedOperator = operator;
+      selectedOperator = operator;
     });
 
     _updateDisplayText();
@@ -28,7 +29,7 @@ class _MainScreenState extends State<MainScreen> {
 
   void _updateDisplayText() {
     setState(() {
-      _displayText = "${firstNumberController.text} $_selectedOperator ${secondNumberController.text}".trim();
+      _displayText = "${firstNumberController.text} $selectedOperator ${secondNumberController.text}".trim();
     });
   }
 
@@ -37,25 +38,18 @@ class _MainScreenState extends State<MainScreen> {
     double secondNumber = double.tryParse(secondNumberController.text) ?? 0;
 
     setState(() {
-      // result = BasicArithmetic.calculate(num1, num2, operation);
-    });
+      result = BasicArithmetic.calculate(firstNumber, secondNumber, selectedOperator);
 
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          content: Text(_displayResult),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop(); // Close the dialog
-              },
-              child: Text("OK"),
-            ),
-          ],
-        );
-      },
-    );
+      if (selectedOperator == "÷" && firstNumber < secondNumber) {
+        _displayResult = _formatDouble(result);
+      } else {
+        _displayResult = result.toInt().toString();
+      }
+    });
+  }
+
+  String _formatDouble(double result) {
+    return result % 1 == 0 ? result.toInt().toString() : result.toStringAsFixed(6);
   }
 
   @override
@@ -88,19 +82,20 @@ class _MainScreenState extends State<MainScreen> {
                   margin: EdgeInsets.only(top: 24),
                   padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
                   width: MediaQuery.of(context).size.width * 0.90,
-                  height: 174,
+                  // height: 175,
                   decoration: BoxDecoration(
                       color: Color(0xFFCDC1FF),
                       borderRadius: BorderRadius.circular(8)
                   ),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
                         _displayText.isEmpty ? "" : _displayText,
                         textAlign: TextAlign.right,
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 24,
                           color: Colors.white,
                         )
                       ),
@@ -108,7 +103,7 @@ class _MainScreenState extends State<MainScreen> {
                           _displayResult.isEmpty ? "" : _displayResult,
                           textAlign: TextAlign.right,
                           style: TextStyle(
-                            fontSize: 32,
+                            fontSize: 64,
                             color: Colors.white,
                           )
                       ),

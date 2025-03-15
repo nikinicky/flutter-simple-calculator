@@ -1,14 +1,14 @@
 class BasicArithmetic {
-  static double calculate(double num1, double num2, String operation) {
-    switch (operation) {
+  static double calculate(double firstNumber, double secondNumber, String selectedOperator) {
+    switch (selectedOperator) {
       case "+":
-        return num1 + num2;
+        return firstNumber + secondNumber;
       case "-":
-        return num1 - num2;
-      case "*":
-        return num1 * num2;
-      case "/":
-        return num2 != 0 ? num1 / num2 : 0; // Prevent division by zero
+        return firstNumber - secondNumber;
+      case "×":
+        return firstNumber * secondNumber;
+      case "÷":
+        return secondNumber != 0 ? firstNumber / secondNumber : 0;
       default:
         return 0;
     }
