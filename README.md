@@ -9,16 +9,16 @@ A very simple calculator app built with Flutter that supports basic arithmetic o
 Here are some screenshots of the app in action :
 
 Main screen
-![Main screen](https://drive.google.com/file/d/169twJElbgIK5FQFNVUCtxcYmmRNVE0AC/view?usp=drive_link)
+![Main screen](https://drive.google.com/uc?export=view&id=169twJElbgIK5FQFNVUCtxcYmmRNVE0AC)
 
 Addition
-![Addition](https://drive.google.com/file/d/1HQy2_YgymHde_b2FOb_SILuHvAPvx0mm/view?usp=drive_link)
+![Addition](https://drive.google.com/uc?export=view&id=1HQy2_YgymHde_b2FOb_SILuHvAPvx0mm)
 
 Substraction
-![Substraction](https://drive.google.com/file/d/1zcyzGd7Kk4H0bMFVfnD5xl3RYUr_2jjh/view?usp=drive_link)
+![Substraction](https://drive.google.com/uc?export=view&id=1zcyzGd7Kk4H0bMFVfnD5xl3RYUr_2jjh)
 
 Multipication
-![Multipication](https://drive.google.com/file/d/1WjmcAvLl7V_VQ2oC3N8yw798V_FlXeGX/view?usp=drive_link)
+![Multipication](https://drive.google.com/uc?export=view&id=1WjmcAvLl7V_VQ2oC3N8yw798V_FlXeGX)
 
 Division
-![Division](https://drive.google.com/file/d/1kUXnRoO6RClQGJDoKb-TbO5COhwF3Tn2/view?usp=drive_link)
+![Division](https://drive.google.com/uc?export=view&id=1kUXnRoO6RClQGJDoKb-TbO5COhwF3Tn2)
